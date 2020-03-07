@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo
+  freemarker:
+    allow-request-override: true
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      number_format: 0 # freemarker会自动将整型数字转换为千位分隔，不方便
+    http:
+      encoding:
+        charset: utf-8
+        force: true
+server:
+  port: 8088
